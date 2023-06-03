@@ -1,0 +1,155 @@
+/* For the Resume WebPage */
+
+.Resume.Button {
+    border-style: none;
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
+    padding-top: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+}
+
+.Resume.Education.Small {
+    font-size: 25px;
+    font-weight: 100;
+    align-items: left;
+    text-align:left;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    
+}
+
+.Resume.Header.List li{ 
+    padding-left: 30px;
+}
+
+
+.Resume.Education.Large {
+    font-size: 30px;
+    font-weight: 300;
+    align-items: left;
+    text-align:left;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Resume.Background {
+    padding-top: 25px;
+    height: fit-content;
+    background: #f0f0f0;
+    padding-bottom: 50px;
+}
+
+.Resume.Experience.Title {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    text-align:center;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    font-size: 32px;
+    padding-top: 30px;
+}
+
+
+/* Checked */
+.Resume.Normal{
+    text-align: left;
+    font-size: 17px;
+    padding-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Resume.Normal strong {
+    font-weight: bolder;
+}
+
+
+/* Checked */
+.Resume.Education {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    text-align:center;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    font-size: 20px;
+}
+
+.Resume.List {
+    padding-top: 10px;
+}
+
+.Resume li{
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.Resume.Bullet {
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left;
+    padding-left: 15px;
+}
+
+.Resume.Container {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    text-align:center;
+    margin:auto;
+    max-width: 80vw;
+    padding-top: 5px;
+}
+
+/* Checked */
+.Resume.Title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.Resume.Title h1{
+    border-bottom: black;
+    border-bottom-style: solid;
+    max-width: 80vw;
+    margin: auto; 
+}
+
+/* Checked */
+.Resume.Container h2{
+    border-bottom: black;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom-style: solid;
+    font-size: 32px;
+    text-align: left;
+}
+
+.Resume.Title ul{
+    list-style: none;
+    display:flex;
+    font-size: 23px;
+    margin:auto;
+    justify-content: center;
+}
+
+.Resume.Container h1 {
+    color: black;
+    max-width: inherit;
+    text-align: left;
+    border-style: none;
+    border-bottom: 2px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/* Resume webpage cSS ^^^^ */

@@ -1,0 +1,36 @@
+.Container {
+    max-width: 80vw;
+    margin:auto;
+    font-family: 'Open Sans', 'Poppins', 'Times New Roman', Times, serif;
+}
+
+.Container h3 {
+    padding-top: 10px;
+}
+
+.Calc {
+    display:flex;
+}
+
+.Form {
+}
+
+.Form h2 {
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.Field { 
+}
+
+.Field h3 {
+    font-weight: 400;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.Field input {
+    height: 25px;
+}
