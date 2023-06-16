@@ -3,8 +3,10 @@ import React from "react";
 import Contact from '../Webpages/Contact';
 import Home from '../Webpages/Home';
 import Resources from '../Webpages/Resources';
-import AIGradeCalc from '../Webpages/AIGradeCalc';
+import CS360Grade from '../Webpages/360';
 import Resume from '../Webpages/Resume';
+import CS170Grade from "../Webpages/170";
+import CS104Grade from "../Webpages/104";
 
 export const Pages = [
     {
@@ -29,7 +31,17 @@ export const Pages = [
 
     {
         path: '/Resources/360Grade',
-        element: <AIGradeCalc />
+        element: <CS360Grade />
+    },
+
+    {
+        path: '/Resources/170Grade',
+        element: <CS170Grade />
+    },
+
+    {
+        path: '/Resources/104Grade',
+        element: <CS104Grade />
     },
 
     {

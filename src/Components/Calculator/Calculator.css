@@ -10,6 +10,7 @@
 
 .Calc {
     display:flex;
+    flex-wrap: wrap;
 }
 
 .Form {
@@ -22,6 +23,7 @@
 }
 
 .Field { 
+    max-width: 80vw;
 }
 
 .Field h3 {

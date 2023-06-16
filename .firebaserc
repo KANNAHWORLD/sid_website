@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "sidhub-5f837"
-  }
+    "default": "sidhub-3e988",
+    "sidhub": "sidhub-3e988"
+  },
+  "targets": {},
+  "etags": {}
 }

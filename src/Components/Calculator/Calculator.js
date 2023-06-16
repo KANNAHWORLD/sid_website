@@ -34,6 +34,10 @@ export default function Calculator({ CalcObj }){
                 <br />
                 As always, this is just an Estimate and your real class grade can differ!
             </p>
+            <br />
+            <p>
+                See any problems? Submit a grade calculator fix request using the Google forms on the Contact Me page
+            </p>
             <div className="Calc">
                 <form>
                     {CalcObj.map(({ section, totalWeight, subSections }) => {
@@ -44,7 +48,7 @@ export default function Calculator({ CalcObj }){
                                     {subSections.map(({ name, weight }) => (
                                         <div className="Field">
                                             <h3>{name} ({weight}%)</h3>
-                                            <input defaultValue={0} id={name} type="number" min={0} max={100} onChange={handleChange(weight)} />
+                            <input defaultValue={0} id={name} type="number" min={0} max={100} onChange={handleChange(weight)} />
                                         </div>
                                     ))}
                                 </div>

@@ -1,6 +1,7 @@
 export const CS360Calculator = [
     {
         section: "Problem Sets",
+        lastUpdate: "June 15, 2023",
         totalWeight: 15,
         subSections: [
             {
@@ -43,6 +44,7 @@ export const CS360Calculator = [
     {
         section: "Programming Assignments",
         totalWeight: 35,
+        lastUpdate: "June 15, 2023",
         subSections: [
             {
                 name: "Lab1",
@@ -70,6 +72,7 @@ export const CS360Calculator = [
     {
         section: "Midterm Exam",
         totalWeight: 20,
+        lastUpdate: "June 15, 2023",
         subSections: [
             {
                 name: "Midterm Exam",
@@ -81,6 +84,7 @@ export const CS360Calculator = [
     {
         section: "Final Exam",
         totalWeight: 30,
+        lastUpdate: "June 15, 2023",
         subSections: [
             {
                 name: "Final Exam",
