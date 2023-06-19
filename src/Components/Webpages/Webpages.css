@@ -83,8 +83,52 @@
 .Button.Link {
     display: block;
     color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     text-align: center;
     justify-content: center;
+    text-decoration: none;
     align-items: center;
+    max-width: fit-content;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.ImageCover {
+    background-size: cover;
+    height: fit-content;
+    height: 80vh;
+    width: 100vw;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* For the about page */
+
+.Bio {
+    margin: auto;
+    font-family: serif;
+    max-width: 80vw;
+    padding-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.Bio h1 {
+    font-size: 45px;
+    justify-content: space-around;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.Bio p {
+    font-size: 20px;
+}
+
+.Bio ul {
+    font-size: 20px;
+    padding-left: 5vw;
+    list-style: circle;
+}
+
+.Bio a {
+    color: rgb(21, 1, 103);
 }

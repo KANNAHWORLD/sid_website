@@ -10,6 +10,11 @@ export const menuItems = [
     },
 
     {
+        title: "About",
+        url: "/Me"
+    },
+
+    {
         title: "Resources",
         url: "/Resources",
         submenu: 

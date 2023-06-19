@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import './Webpages.css';
 import { Animator, ScrollContainer, ScrollPage, batch, FadeIn, FadeOut, MoveIn, MoveOut, Sticky, StickyIn, ZoomOut, StickyOut } from "react-scroll-motion";
-import { Parallax } from "react-scroll-parallax";
 import VideoScroll from "../VideoScroll/VideoScroll";
-// import video from 'TestVideo.mp4';
 
 function Home(){
 
@@ -12,9 +10,8 @@ function Home(){
 
     return (
         <>
-        <VideoScroll id="Video1" path='/TestVideo.mp4' offset={50} pages={1.4} playBackSpeed={1} />
+
         <div className="Background">
-            {/* <VideoScroll path='/TestVideo.mp4' offset={250} pages={1.4} playBackSpeed={1} /> */}
             <ScrollContainer>
                 <ScrollPage>
                     <Animator animation={batch(ZoomInScrollOut, MoveOut(0, -200))}>
@@ -25,9 +22,14 @@ function Home(){
                 <ScrollPage>
                     <Animator animation={batch(FadeIn(-3, 1), FadeOut(1, -2), MoveIn(0, 300), MoveOut(0, -300), Sticky())} >
                         <p className="CenterScroll">
-                            Since I am a CP, check resources for a 360 grade calculator, or conveniently
+                            Since I am a 360 CP, check resources for a 360 grade calculator, or conveniently
                         </p>
                         <a href={"/Resources/360Grade"} className="Button Link">The Grade Calc</a>
+                        <br />
+                        <p>
+                            There are other grade calculators still available, simply check resources and you
+                            can browse through
+                        </p>
                     </Animator>
                 </ScrollPage>
                 <ScrollPage>
@@ -39,6 +41,7 @@ function Home(){
                 </ScrollPage>
             </ScrollContainer>
         </div>
+
         </>
     );
 }
