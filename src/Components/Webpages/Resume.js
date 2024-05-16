@@ -40,6 +40,11 @@ export default function Resume(){
             MoreButton={true}
             dash={false} 
             LinkThird={true} />
+            <div className="Resume Container" style={{alignItems: "center"}}>
+                <p>
+                    Last updated May 15th, 2024
+                </p>
+            </div>
 
         </div>
     );

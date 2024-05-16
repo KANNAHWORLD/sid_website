@@ -3,27 +3,16 @@ export const ShownWorkExperience = {
     title: "Work Experience",
     data: [
         {
-        First: "USC",
-        Second: "Course Producer, ",
-        Third: "AI and Machine Learning, ",
+        First: "USC Viterbi",
+        Second: "Head Teaching Assistant | ",
+        Third: "Intro to AI/ML & Fundamentals of Computing, ",
         Location: "Los Angeles, CA",
-        Date: "Aug 2022-Present",
+        Date: "August 2022-Present",
         Exp: [
-            "Hold weekly office hours to guide 270+ students with homework and exam prep. \
-            Instruct small, weekly lab sessions. Manage course forum and respond to individual questions, \
-            resulting in high student success rates."
+            "Implemented efficient workflows to manage 15+ course staff, updated assignments and exams",
+            "Taught 200+ students about programming in python and C++, AI topics of linear regression, neural networks",
+            "Delivered 100% of tasks on-time, led a lab section with 25 students"
         ]
         },
-
-        {
-            First: "USC/CHLA",
-            Second: "Research Intern, ",
-            Third: "",
-            Location: "Los Angeles, CA",
-            Date: "Jun 2019-Aug 2019",
-            Exp: ["Compared densities of white matter in macaques through DTI (MRI)\
-             images and discovered decreased white matter integrity in developing macaque brains due to serotonin.\
-             Communicated with research advisor to write an abstract published in the Society for Brain Mapping and Therapeutics."]
-        }
     ]
 }

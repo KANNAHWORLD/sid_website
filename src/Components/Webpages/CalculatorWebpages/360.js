@@ -17,6 +17,9 @@ export default function CS360Grade(){
                 This calculator does not take into account dropping of lowest Lab and lowest PS. If you would like to see an estimate 
                 with lowest scores dropped, just set your grade for that assignment as 100.
             </p>
+            <p>
+                Last Update: May 15th, 2024
+            </p>
             <br />
             <Calculator CalcObj={CS360Calculator} />
         </div>

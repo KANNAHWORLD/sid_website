@@ -40,15 +40,15 @@ export const Pages = [
         element: <CS360Grade />
     },
 
-    {
-        path: '/Resources/170Grade',
-        element: <CS170Grade />
-    },
+    // {
+    //     path: '/Resources/170Grade',
+    //     element: <CS170Grade />
+    // },
 
-    {
-        path: '/Resources/104Grade',
-        element: <CS104Grade />
-    },
+    // {
+    //     path: '/Resources/104Grade',
+    //     element: <CS104Grade />
+    // },
 
     {
         path: '/Resume',

@@ -1,42 +1,42 @@
 export const CS360Calculator = [
     {
         section: "Problem Sets",
-        lastUpdate: "June 15, 2023",
-        totalWeight: 15,
+        lastUpdate: "May 15th, 2024",
+        totalWeight: 5,
         subSections: [
             {
                 name: "PS1",
-                weight: 2.14
+                weight: .714
             },
 
             {
                 name: "PS2",
-                weight: 2.14
+                weight: .714
             },
 
             {
                 name: "PS3",
-                weight: 2.14
+                weight: .714
             },
 
             {
                 name: "PS4",
-                weight: 2.14
+                weight: .714
             },
 
             {
                 name: "PS5",
-                weight: 2.14
+                weight: .714
             },
 
             {
                 name: "PS6",
-                weight: 2.14
+                weight: .714
             },
 
             {
                 name: "PS7",
-                weight: 2.14
+                weight: .714
             },
         ]
     },
@@ -44,51 +44,59 @@ export const CS360Calculator = [
     {
         section: "Programming Assignments",
         totalWeight: 35,
-        lastUpdate: "June 15, 2023",
+        lastUpdate: "May 15th, 2024",
         subSections: [
             {
                 name: "Lab1",
-                weight: 7
+                weight: 35/4
             },
             {
                 name: "Lab2",
-                weight: 7
+                weight: 35/4
             },
             {
                 name: "Lab3",
-                weight: 7
+                weight: 35/4
             },
             {
                 name: "Lab4",
-                weight: 7
-            },
-            {
-                name: "Lab5",
-                weight: 7
+                weight: 35/4
             },
         ]
     },
 
     {
-        section: "Midterm Exam",
-        totalWeight: 20,
-        lastUpdate: "June 15, 2023",
+        section: "Final Project",
+        totalWeight: 10,
+        lastUpdate: "May 15th, 2024",
+        subSections: [
+            {
+                name: "Final project",
+                weight: 10
+            },
+        ]
+    },
+
+    {
+        section: "Midterm Exam 1",
+        totalWeight: 25,
+        lastUpdate: "May 15th, 2024",
         subSections: [
             {
                 name: "Midterm Exam",
-                weight: 20
+                weight: 25
             }
         ]
     },
 
     {
-        section: "Final Exam",
-        totalWeight: 30,
-        lastUpdate: "June 15, 2023",
+        section: "Midterm Exam 2",
+        totalWeight: 25,
+        lastUpdate: "May 15th, 2024",
         subSections: [
             {
-                name: "Final Exam",
-                weight: 30
+                name: "Midterm Exam 2",
+                weight: 25
             }
         ]
     }

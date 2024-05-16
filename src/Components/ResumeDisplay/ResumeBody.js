@@ -8,11 +8,11 @@ function mapDisplay(Section, dash, thirdAsLink){
 
     return (
         <>
-            {Section.data.map(({ First, Second, Third, Location, Date, Exp }) => 
+            {Section.data.map(({ First, Second, Third, LinkName, Location, Date, Exp }) => 
                 (
                 <>
                     <div className="Resume Experience Title">
-                        <h6><strong>{First}</strong> {dash && '–'} {Second} {thirdAsLink(Third)} <i>{Location}</i></h6>
+                        <h6><strong>{First}</strong> {dash && '–'} {Second} {thirdAsLink(Third, LinkName)} <i>{Location}</i></h6>
                         <h6>{Date}</h6>
                     </div>
                     <div className="Resume Bullet">
@@ -31,14 +31,14 @@ function mapDisplay(Section, dash, thirdAsLink){
 }
 
 
-export default function ResumeBody({ Section, HiddenSection, dash=true, LinkThird=false, MoreButton=false }){
+export default function ResumeBody({ Section, HiddenSection, dash=true, LinkThird=false, MoreButton=false}){
     var thirdAsLink = '';
     if(LinkThird){
-        thirdAsLink = (val) => (<a href={val}>{val}</a>);
+        thirdAsLink = (val, name) => (<a href={val}>{name}</a>);
     }
     else
     {
-        thirdAsLink = (val) => (val);
+        thirdAsLink = (val, name) => (val);
     }
 
     const [show, setShow] = useState(false);
