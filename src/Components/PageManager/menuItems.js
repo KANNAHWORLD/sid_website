@@ -1,8 +1,8 @@
 export const menuItems = [
-    {
-       title: "Home",
-       url: "/Home",
-    },
+    // {
+    //    title: "Home",
+    //    url: "/Home",
+    // },
 
     {
         title: "Resume",
@@ -15,7 +15,7 @@ export const menuItems = [
     },
 
     {
-        title: "Resources",
+        title: "My Resources and Projects",
         url: "/Resources",
         submenu: 
             [

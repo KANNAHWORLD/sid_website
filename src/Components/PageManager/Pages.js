@@ -8,6 +8,7 @@ import Resume from '../Webpages/Resume';
 import CS170Grade from "../Webpages/CalculatorWebpages/170";
 import CS104Grade from "../Webpages/CalculatorWebpages/104";
 import AboutMe from "../Webpages/About";
+import MemoryModels from "../Webpages/ProgrammingGuides/MemoryModels";
 
 export const Pages = [
     {
@@ -49,6 +50,11 @@ export const Pages = [
     //     path: '/Resources/104Grade',
     //     element: <CS104Grade />
     // },
+
+    {
+        path: '/Resources/memorymodels',
+        element: <MemoryModels />
+    },
 
     {
         path: '/Resume',

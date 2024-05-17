@@ -27,6 +27,11 @@
     box-shadow: 2px 2px 2px #696868;
 }
 
+.ContentSection{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* Following section vvvv is for Calculators sub page */
 
 .PageContainer {
