@@ -9,6 +9,7 @@ import CS170Grade from "../Webpages/CalculatorWebpages/170";
 import CS104Grade from "../Webpages/CalculatorWebpages/104";
 import AboutMe from "../Webpages/About";
 import MemoryModels from "../Webpages/ProgrammingGuides/MemoryModels";
+import AWSSummit2024 from "../Webpages/ResourcesOthers/AWSSummit2024";
 
 export const Pages = [
     {
@@ -54,6 +55,11 @@ export const Pages = [
     {
         path: '/Resources/memorymodels',
         element: <MemoryModels />
+    },
+
+    {
+        path: '/Resources/AWSSummit2024',
+        element: <AWSSummit2024 />
     },
 
     {

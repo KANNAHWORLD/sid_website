@@ -54,8 +54,67 @@ function MemoryModels() {
                 </p>
             </div>
             <br /> <br />
+            <div>
+                <h2>
+                    Relaxed
+                </h2>
+                <p>
+                    Relaxed is the most unrestrictive memory model, and thus, has the least amount of overhead compared
+                    to all other models. There is no defined order (no "Happens-Before" relationship) of execution for 
+                    relaxed atomic operations. The only guarantee provided by the model is that no earlier states of the atomic
+                    variable can be seen once a more recent state is observed.
+                    <br /><br />
+                    In terms of efficiency, relaxed operations can be reordered and optimized by the compiler due to the absence of
+                    strict ordering. While the model is not ideal for all scenarios, it is very useful when a change should be seen evenutally.
+                    I have personally used this model when programming a flag to terminate a thread. In this case, it was not necessary for
+                    the thread to quit immediately. Instead, the thread would see the update after a few milliseconds and quit. 
+                    My use is similar to the concept of stop-tokens in C++20.
+                    <br /><br />
+                    <h4>Programming Relaxed</h4>
+                    Defined as <code>std::memory_order_relaxed</code>. <br /> <br />
+                    Ex. <br />
+                    <code>atomic.load(std::memory_order_relaxed)</code> <br />
+                    <code>atomic.store(10, std::memory_order_relaxed)</code> <br />
+                    <code>atomic.exchange(20, std::memory_order_relaxed)</code> <br />
+                </p>
+            </div>
+            <br /><br />
+            <div>
+                <h2>
+                    Acquire and Release
+                </h2>
+                <p>
+                    The acquire and release model is somewhat similar to the sequential and consistent model. Suppose thread 1
+                    executes multiple store and load operation before a store/load to atomic variable X using the acquire/release mdoel. 
+                    If thread 2 sees the updated value of X, then thread 2 is guaranteed to see the results of all store/load operations
+                    preceeding the operation on X by thread 1. However, if thread 2 does not see the updated value of X, then thread 2 
+                    arbitrarily sees the results of the store/load operations preceeding the operation on X by thread 1.
+                    <br /><br />
+                    Unlike sequential and consistent, operations are not ordered across all threads. Instead, each thread has its own
+                    ordering of operations. For example, suppose thread 1 makes a store operation to X and thread 2 makes a store operation
+                    to Y using the acquire/release model. Then, thread 3 can potentially see the updated value of X but not Y while at the
+                    same time thread 4 can potentially see the updated value of Y but not X. In the sequential and consistent model, 
+                    this is impossible because a strict ordering of operations is enforced across all threads. In The sequential and 
+                    consistent model, the store to X must have occurred before the store to Y, or vice versa. Therefore, if thread 3 
+                    sees the updated value of X and thread 4 sees the update to Y, if X happened before Y, thread 4 MUST see the update to X.
+                    <br /><br />
+                    As illustrated, the acquire and release model does not support a process-wide ordering of atomic operations. However, 
+                    operations within a single thread are ordered. As a result, this model is much less computationally expensive. 
+                    <br /><br />
+                    <h4>Programming Relaxed</h4>
+                    Defined as: <br /> 
+                    <code>std::memory_order_acquire</code> <br />
+                    <code>std::memory_order_release</code> <br /> <br />
+                    Ex. <br />
+                    <code>atomic.load(std::memory_order_acquire)</code> <br />
+                    <code>atomic.store(10, std::memory_order_release)</code> <br />
+                    <code>atomic.exchange(20, std::memory_order_acquire)</code> <br /> <br />
+                    Note: load is always a memory order acquire and store is always a memory order release. <br /> <br />
+                    
+                </p>
+            </div>
             <p>
-                Memory order relaxed, acquire/release, and consume in the works :)
+                Memory order acq_rel, consume in the works :)
             </p>
         </div>
     );
