@@ -1,6 +1,10 @@
 export const ProjectDemos = [
     {
-        title: "National Parks Info Card",
-        link: "/Resources/NationalParkCard",
+        title: "Arxiv Paper Classification",
+        link: "/Resources/arxivClassification",
     },
+    // {
+    //     title: "National Parks Info Card",
+    //     link: "/Resources/NationalParkCard",
+    // },
 ]

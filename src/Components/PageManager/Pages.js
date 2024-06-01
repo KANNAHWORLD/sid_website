@@ -10,6 +10,7 @@ import CS104Grade from "../Webpages/CalculatorWebpages/104";
 import AboutMe from "../Webpages/About";
 import MemoryModels from "../Webpages/ProgrammingGuides/MemoryModels";
 import AWSSummit2024 from "../Webpages/ResourcesOthers/AWSSummit2024";
+import ArxivClassification from "../Webpages/Projects/arxivClassification";
 
 export const Pages = [
     {
@@ -55,6 +56,11 @@ export const Pages = [
     {
         path: '/Resources/memorymodels',
         element: <MemoryModels />
+    },
+
+    {
+        path: '/Resources/arxivClassification',
+        element: <ArxivClassification />
     },
 
     {

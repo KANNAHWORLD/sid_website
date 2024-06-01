@@ -4,7 +4,7 @@ import "./Webpages.css";
 import { Wikiedits } from "../PageManager/Resources/WikiEdits";
 import { ProgGuides } from "../PageManager/Resources/ProgGuides";
 import { GradeCalculators } from "../PageManager/Resources/Calculators";
-import { AWSSummit2024 } from "./ResourcesOthers/AWSSummit2024";
+import { ProjectDemos } from "../PageManager/Resources/ProjectDemos";
 import { otherPage } from "../PageManager/Resources/OtherPages";
 
 export default function Resources(){
@@ -51,7 +51,7 @@ export default function Resources(){
                         Projects Demos!
                     </h2>
                     <h3 className="Content">
-                        {Wikiedits.map((edit) => ( <div><a href={edit.link}>{edit.title}</a><br /></div>))}
+                        {ProjectDemos.map((edit) => ( <div><a href={edit.link}>{edit.title}</a><br /></div>))}
                     </h3>
                 </div>
                 <div className="ContentSection" style={{paddingRight: "10px", paddingLeft: "10px"}}>

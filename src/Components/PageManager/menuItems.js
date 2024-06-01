@@ -17,21 +17,21 @@ export const menuItems = [
     {
         title: "My Resources and Projects",
         url: "/Resources",
-        submenu: 
-            [
-                {
-                    title: "360 Grade Calc",
-                    url: "/Resources/360Grade"
-                },
-                // {
-                //     title: "170 Grade Calc",
-                //     url: "/Resources/170Grade"
-                // },
-                // {
-                //     title: "104 Grade Calc",
-                //     url: "/Resources/104Grade"
-                // },
-            ]
+        // submenu: 
+        //     [
+        //         {
+        //             title: "360 Grade Calc",
+        //             url: "/Resources/360Grade"
+        //         },
+        //         // {
+        //         //     title: "170 Grade Calc",
+        //         //     url: "/Resources/170Grade"
+        //         // },
+        //         // {
+        //         //     title: "104 Grade Calc",
+        //         //     url: "/Resources/104Grade"
+        //         // },
+        //     ]
     },
 
     {
