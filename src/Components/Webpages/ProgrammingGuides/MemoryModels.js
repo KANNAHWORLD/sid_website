@@ -101,7 +101,11 @@ function MemoryModels() {
                     As illustrated, the acquire and release model does not support a process-wide ordering of atomic operations. However, 
                     operations within a single thread are ordered. As a result, this model is much less computationally expensive. 
                     <br /><br />
-                    <h4>Programming Relaxed</h4>
+                    From cppreference's memory models page, acquire prevents the reordering of store/read instructions before the
+                    memory_order_acquire operation. In addition, release prevents the reordering of read/store instructions after the
+                    call to memory_order_release operation.
+                    <br /><br />
+                    <h4>Programming Acquire/Release</h4>
                     Defined as: <br /> 
                     <code>std::memory_order_acquire</code> <br />
                     <code>std::memory_order_release</code> <br /> <br />
@@ -113,9 +117,33 @@ function MemoryModels() {
                     
                 </p>
             </div>
-            <p>
-                Memory order acq_rel, consume in the works :)
-            </p>
+            <br /><br />
+            <div>
+                <h2>
+                    Consume
+                </h2>
+                <p>
+                    Memory order consume further reduces the strict contrainsts of the acquire/release model. 
+                    The consume model essentially removes synchronization between non-dependent variables.
+                    Given the following sequence of operations: <br />
+                    <code>
+                        x = 10; <br />
+                        y = 0; <br />
+                        g = atomic.store(x, std::memory_order_consume); <br />
+                    </code>
+                    The only dependencies in this sequence of operation is the store operations of x and g. As a result, if the 
+                    updated value of g is seen in a different thread, the updated value of x must also be seen. However,
+                    there is no guarantee that the updated value of y will be seen if the updated value of g is seen.
+                    <br /><br />
+                    <h4>Programming Consume</h4>
+                    Defined as: <br /> 
+                    <code>std::memory_order_consume</code> <br /> <br />
+                    Ex. <br />
+                    <code>atomic.load(std::memory_order_consume)</code> <br />
+                    <code>atomic.store(10, std::memory_order_consume)</code> <br />
+                    <code>atomic.exchange(20, std::memory_order_consume)</code> <br /> <br />
+                </p>
+            </div>
         </div>
     );
 }

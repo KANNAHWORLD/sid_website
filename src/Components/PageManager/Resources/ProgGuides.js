@@ -5,4 +5,9 @@ export const ProgGuides = [
         link: "Resources/MemoryModels",
     },
 
+    {
+        title: "Bootloaders",
+        link: "Resources/Bootloader"
+    }
+
 ]

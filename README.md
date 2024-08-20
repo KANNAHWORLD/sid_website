@@ -1,3 +1,42 @@
+# Hello! Welcome to the SidHub repo
+This is my project website that I plan to keep up-to-date as I learn new 
+things and work on new projects.
+
+## Contribution
+IF you like any of the reference guides or grade calculators
+that I have made and would like to contribute create a new one, please feel free to contact me! It would be awesome to see more calculators and reference guides.
+
+## Steps for adding a new calculator
+1. Define the format of the calculator under src/Components/PageManager/Calculators. Review 
+the format of other files and follow the same JSON format to define a new calculator
+
+2. Create a new webpage under src/Components/Webpages/CalculatorWebpages.
+Follow the format of other calculators. This step creates a renderable 
+webpage for your calculator.
+
+3. In src/Components/PageManager/Resources/Calculators.js, add a dict item into the list
+with the title for the webpage and a link for the webpage. This step creates a link for your webpage in the Resources home page. Please limit the title to 30 characters and the link 
+should begin with "Resources"
+
+4. Under src/Components/PageManager/Pages.js, add a link and a new dictionary item with "path" and 
+"element" keys. The path should start with "Resource/" and the element should 
+be a jsx element that renders the entire page. The element name should be the same as the 
+one created in step 2 and the link should be the same as the link in part 3.
+
+## Steps for adding a new Resources webpage
+1. Create a React component under src/Components/Webpages/ProgrammingGuides. Feel free
+to review other files in the the same directory to get an idea of creating a react component.
+This step creates a new 
+
+2. In src/Components/PageManager/Resources/ProgGuides.js, add a dict item into the list
+with the title for the webpage and a link for the webpage. This step creates a link for your webpage in the Resources home page. Please limit the title to 30 characters and the link 
+should begin with "Resources"
+
+3. Under src/Components/PageManager/Pgaes.js, add a link and a new dictionary item with "path" and 
+"element" keys. The path should start with "Resource/" and the element should 
+be a jsx element that renders the entire page. The element name should be hte same as the 
+one created in step 2 and the link should be the same as the link in part 1.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

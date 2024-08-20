@@ -11,6 +11,10 @@ import AboutMe from "../Webpages/About";
 import MemoryModels from "../Webpages/ProgrammingGuides/MemoryModels";
 import AWSSummit2024 from "../Webpages/ResourcesOthers/AWSSummit2024";
 import ArxivClassification from "../Webpages/Projects/arxivClassification";
+import WebpageArchitecture from "../Webpages/ResourcesOthers/WebpageArchitecture";
+import Bootloader from "../Webpages/ProgrammingGuides/BootLoader_Firmware"
+import GeneralRecruiter from "../Webpages/Recruiters/GeneralRecruiters";
+import PiazzaDatabase360 from "../Webpages/Projects/360PiazzaDatabase";
 
 export const Pages = [
     {
@@ -71,5 +75,25 @@ export const Pages = [
     {
         path: '/Resume',
         element: <Resume />
+    },
+
+    {
+        path: 'Resources/WebpageCloudArchitecture',
+        element: <WebpageArchitecture />
+    },
+
+    {
+        path: 'Resources/Bootloader',
+        element: <Bootloader />
+    },
+
+    {
+        path: 'Resources/GRecruiters',
+        element: <GeneralRecruiter />
+    },
+
+    {
+        path: 'Resources/360PiazzaDatabase',
+        element: <PiazzaDatabase360 />
     }
 ];

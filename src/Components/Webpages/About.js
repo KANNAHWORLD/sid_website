@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutMe(){
         return (
             <>
-            <div className="ImageCover" style={{backgroundImage: "url(/SidBackground.jpg"}}>
+            <div className="ImageCover" style={{backgroundImage: "url(/SidBackground.jpg)"}}>
             </div>
             <div className="Background">
                 <div className="Bio">
@@ -24,7 +24,7 @@ export default function AboutMe(){
                         <h5>What have I been up to?</h5>
                         <br />
                         Its summer, so I've had very few commitments. Without classes and assignments every day, I've been doing a lot
-                        of cooking, cathcing up with friends, as well as learning many new things. One of my favorite things that I've 
+                        of cooking, catching up with friends, as well as learning many new things. One of my favorite things that I've 
                         made is a fresh tomato soup with freshly baked focaccia bread. More on the technical side this website 
                         you are currently looking at was designed by me! I was definitely not
                         capable of making a ReactJS app at the start of summer. ReactJS is a relatively small todo list, so here is

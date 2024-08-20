@@ -32,7 +32,7 @@ export default function Resources(){
                 </div>
                 <div className="ContentSection" style={{paddingRight: "10px", paddingLeft: "10px"}}>
                     <h2>
-                        Programming Guides:
+                        Programming Notes:
                     </h2>
                     <h3 className="Content">
                         {ProgGuides.map((guide) => ( <div><a href={guide.link}>{guide.title}</a><br /></div>))}

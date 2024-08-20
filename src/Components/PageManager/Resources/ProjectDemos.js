@@ -3,8 +3,8 @@ export const ProjectDemos = [
         title: "Arxiv Paper Classification",
         link: "/Resources/arxivClassification",
     },
-    // {
-    //     title: "National Parks Info Card",
-    //     link: "/Resources/NationalParkCard",
-    // },
+    {
+        title: "360 Piazza Database",
+        link: "/Resources/360PiazzaDatabase",
+    }
 ]
