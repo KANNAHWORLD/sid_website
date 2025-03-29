@@ -1,3 +1,4 @@
+/* General Styles */
 .Title {
     text-align: center;
     font-size: 35px;
@@ -9,7 +10,7 @@
     padding-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 80vw;
-    margin:auto;
+    margin: auto;
 }
 
 .Button {
@@ -19,21 +20,18 @@
     font-family: 'Open Sans', 'Poppins', 'Times New Roman', Times, serif;
     font-size: 15px;
     box-shadow: 2px 2px 2px #c6c6c6;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 5px;
 }
 
 .Button:hover {
     box-shadow: 2px 2px 2px #696868;
 }
 
-.ContentSection{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.ContentSection {
+    padding: 10px 0;
 }
 
-/* Following section vvvv is for Calculators sub page */
-
+/* Calculators Sub Page */
 .PageContainer {
     padding-top: 10px;
     max-width: 80vw;
@@ -45,13 +43,10 @@
 .PageContainer h1 {
     font-size: 30px;
     text-align: center;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
+    border-bottom: 2px solid;
     width: fit-content;
     justify-content: space-around;
-    margin: auto;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .PageContainer p {
@@ -59,11 +54,10 @@
     font-weight: 500;
 }
 
-/* Following section ^^^^ is for Calculators sub page */
-
+/* Background Styles */
 .Background {
     height: fit-content;
-    background: linear-gradient(140deg, #FFFFFF 20%, #c2c1c1);
+    background: #FFFFFF;
 }
 
 .CenterScroll {
@@ -78,7 +72,7 @@
     z-index: 10;
     display: flex;
     position: absolute;
-    justify-content:unsafe;
+    justify-content: unsafe;
 }
 
 .anim {
@@ -100,15 +94,13 @@
 
 .ImageCover {
     background-size: cover;
-    height: fit-content;
     height: 80vh;
     width: 100vw;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* For the about page */
-
+/* About Page */
 .Bio {
     margin: auto;
     font-family: serif;
@@ -136,4 +128,1681 @@
 
 .Bio a {
     color: rgb(21, 1, 103);
+}
+
+/* Home Page */
+.home-background {
+    background-color: var(--primary-black);
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+.welcome-title {
+    color: var(--primary-gold);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.scroll-down-text {
+    color: var(--primary-white);
+    opacity: 0.8;
+}
+
+.calculator-intro {
+    color: var(--primary-gold);
+    font-size: 1.5rem;
+}
+
+.grade-calc-button {
+    background: #2ecc71;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.calculator-description {
+    color: #fff;
+    opacity: 0.9;
+    font-size: 1.2rem;
+}
+
+.development-notice {
+    color: var(--primary-gold);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Page Sections */
+.page-section {
+    /* min-height: 55vh;  Adjusted to 85% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-section:nth-child(odd) {
+    background-color: var(--primary-black);
+    color: var(--primary-gold);
+}
+
+.page-section:nth-child(even) {
+    background-color: var(--secondary-gold);
+    color: var(--primary-black);
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 4rem 4rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-left {
+    flex: 1;
+    padding-right: 3rem;
+    max-width: 600px;
+}
+
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    min-width: 300px;  /* Ensure minimum width for the right side */
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-gold);
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    color: var(--primary-gold);
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: var(--secondary-gold);
+}
+
+.bio-section {
+    color: var(--primary-white);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Update color variables */
+:root {
+    --primary-black: #000000;
+    --primary-white: #ffffff;
+    --primary-gold: #D4AF37;  /* Rich gold color */
+    --secondary-gold: #F5E6CA;  /* Lighter beige/gold */
+}
+
+/* Timeline Styles */
+.timeline-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: var(--primary-black);
+    overflow: hidden;
+}
+
+.timeline-labels {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-black);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    min-width: 160px; /* Set explicit width to avoid shrinking */
+}
+
+.timeline-label-spacer {
+    height: 80px; /* Match the height of the year scale */
+    margin-bottom: 8px; /* Match mb-8 */
+}
+
+.timeline-label {
+    margin-bottom: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+.timeline-scroll-container {
+    flex-grow: 1;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-gold) var(--primary-black);
+    padding-left: 5px; /* Add slight padding from the fixed labels */
+}
+
+.timeline-content-wrapper {
+    position: relative;
+    min-height: 100%;
+    padding-left: 10px;
+}
+
+/* Ensure the timeline entries are visible */
+.timeline-scroll-container .relative {
+    position: relative;
+    overflow: visible;
+}
+
+.timeline-scroll-container .absolute {
+    position: absolute;
+    z-index: 5;
+}
+
+/* Ensure entries have minimum width */
+.absolute.p-3.text-white.h-full {
+    min-width: 120px;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: repeating-linear-gradient(
+        to bottom,
+        var(--primary-gold) 0,
+        var(--primary-gold) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.timeline-item {
+    margin: 2rem 0;
+    width: 45%;
+    position: relative;
+}
+
+/* Updated dot positioning */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-gold);
+    border: 2px solid var(--primary-black);
+    border-radius: 50%;
+    top: 50%;
+    z-index: 2;
+}
+
+.timeline-item.left {
+    float: left;
+    clear: both;
+    padding-right: 40px;
+}
+
+.timeline-item.right {
+    float: right;
+    clear: both;
+    padding-left: 40px;
+}
+
+.timeline-item.left::after {
+    right: -30px;
+    transform: translate(50%, -50%);
+}
+
+.timeline-item.right::after {
+    left: -30px;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Left items have image on the left */
+.timeline-item.left .timeline-content {
+    flex-direction: row-reverse;
+}
+
+/* Right items have image on the right */
+.timeline-item.right .timeline-content {
+    flex-direction: row;
+}
+
+.timeline-main {
+    flex: 1;
+}
+
+.timeline-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: rgba(212, 175, 55, 0.1);  /* Light gold background for empty state */
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: rgba(212, 175, 55, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-content h3 {
+    color: var(--primary-gold);  /* Gold title */
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.timeline-content p, 
+.timeline-content ul {
+    color: var(--primary-black);  /* Dark text for contrast */
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.timeline-date {
+    color: var(--primary-gold);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Project link styling */
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #D4AF37;
+    font-weight: 400;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-link:hover {
+    background-color: transparent;
+    color: #FFC64D;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+    font-weight: 700;
+}
+
+/* Animation */
+.timeline-item {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Make sure content is cleared properly */
+.timeline-container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Home Timeline Styles */
+.experience-timeline {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.timeline-title {
+    text-align: center;
+    color: var(--primary-gold);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.horizontal-timeline-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.horizontal-timeline {
+    position: relative;
+    padding: 80px 0 40px; /* Increased top padding for year markers */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.timeline-track {
+    position: absolute;
+    height: 4px;
+    background: var(--primary-gold);
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Year markers */
+.year-markers {
+    position: absolute;
+    top: -30px; /* Position above the timeline track */
+    width: 100%;
+    height: 30px;
+}
+
+.year-marker {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.year-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-gold);
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.year-label {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--primary-gold);
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.timeline-items {
+    display: flex;
+    min-width: max-content; /* Ensure it expands to fit all items */
+    position: relative;
+    padding: 0 40px;
+}
+
+.timeline-item-horizontal {
+    flex: 0 0 350px; /* Fixed width items */
+    margin-right: 60px; /* Space between items */
+    position: relative;
+}
+
+.timeline-item-horizontal:last-child {
+    margin-right: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-white);
+    border: 4px solid var(--primary-gold);
+    border-radius: 50%;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.timeline-item-horizontal.education .timeline-dot {
+    background-color: #3498db;
+}
+
+.timeline-item-horizontal.work .timeline-dot {
+    background-color: #2ecc71;
+}
+
+.timeline-content {
+    background-color: var(--primary-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    height: 100%; /* Ensure consistent height */
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-icon {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--primary-white);
+    background-color: var(--primary-gold);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Position title above company */
+.timeline-content h3 {
+    margin: 15px 0 5px;
+    color: var(--primary-black);
+    font-size: 1.3rem;
+    text-align: center;
+    order: 1;
+}
+
+/* Company name below title */
+.timeline-content h4 {
+    margin: 0 0 15px;
+    color: var(--primary-gold);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    order: 2;
+}
+
+/* Other elements */
+.timeline-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+    color: #777;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+    order: 3;
+}
+
+.timeline-content p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    order: 4;
+}
+
+.timeline-details span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.scroll-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: var(--primary-gold);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.scroll-arrow {
+    display: inline-block;
+    margin-left: 5px;
+    animation: bounceRight 1.5s infinite;
+}
+
+@keyframes bounceRight {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+.timeline-section {
+    background-color: var(--primary-black);
+    padding: 4rem 2rem;
+    overflow: hidden; /* Ensure no horizontal scrollbar on the section itself */
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .timeline-item-horizontal {
+        flex: 0 0 300px;
+        margin-right: 40px;
+    }
+    
+    .timeline-details {
+        flex-direction: column;
+    }
+    
+    .year-markers {
+        display: none; /* Hide year markers on mobile to avoid clutter */
+    }
+}
+
+/* Timeline Styles */
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-center: content;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue-200 {
+  color: #bfdbfe;
+}
+
+.text-gray-800 {
+  color: #1f2937;
+}
+
+.dark\:text-gray-200 {
+  color: #e5e7eb;
+}
+
+.bg-blue-900 {
+  background-color: #1e3a8a;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.bg-blue-500\/60 {
+  background-color: rgba(59, 130, 246, 0.6);
+}
+
+.bg-blue-300 {
+  background-color: #93c5fd;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.transform {
+  transform-origin: center;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.origin-right {
+  transform-origin: right;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+/* Update this in your existing CSS */
+.clip-path-arrow {
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+
+/* Full width timeline styles */
+.timeline-fullwidth {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.timeline-fullwidth h2 {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.timeline-fullwidth .bg-blue-900 {
+  width: 100%;
+  border-radius: 0;
+  padding: 2rem 1rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.section-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.page-section.timeline-section {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Add this before the end of the file */
+
+.full-width {
+  width: 100vw !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page-section.timeline-section.full-width {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Updated Timeline Styles with Gold Theme */
+.timeline-fullwidth {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.timeline-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-gold) var(--primary-black);
+  margin-bottom: 10px;
+}
+
+/* Custom scrollbar for Chrome, Edge, and Safari */
+.timeline-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline-scroll-container::-webkit-scrollbar-track {
+  background: var(--primary-black);
+}
+
+.timeline-scroll-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-gold);
+  border-radius: 10px;
+}
+
+/* Color classes for the timeline */
+.bg-primary-black {
+  background-color: var(--primary-black);
+}
+
+.bg-primary-gold {
+  background-color: var(--primary-gold);
+}
+
+.bg-primary-gold-transparent {
+  background-color: rgba(212, 175, 55, 0.4);
+}
+
+.text-gold-light {
+  color: var(--secondary-gold);
+}
+
+.text-black {
+  color: black;
+}
+
+/* Scroll indicator with gold theme */
+.scroll-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  color: var(--primary-gold);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.scroll-arrow {
+  display: inline-block;
+  margin-left: 8px;
+  animation: bounceRight 1.5s infinite;
+}
+
+/* Add these styles for the fixed timeline labels */
+
+.timeline-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: var(--primary-black);
+}
+
+.timeline-labels {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-black);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-label-spacer {
+  height: 80px; /* Match the height of the year scale */
+  margin-bottom: 8px; /* Match mb-8 */
+}
+
+.timeline-label {
+  margin-bottom: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+.timeline-track {
+  width: 100%;
+}
+
+.timeline-scroll-container {
+  flex-grow: 1;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-gold) var(--primary-black);
+}
+
+/* Adjust the scroll arrow animation */
+.scroll-arrow-left {
+  animation: bounceLeft 1.5s infinite;
+}
+
+@keyframes bounceLeft {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+/* Add these styles for multi-row timeline entries */
+
+.timeline-entry {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 4rem;
+  max-height: 4.5rem; /* Ensure entries aren't too tall */
+  overflow: hidden; /* Prevent content overflow */
+  z-index: 5;
+}
+
+.timeline-entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 20; /* Bring to front when hovered */
+}
+
+/* Adjust the timeline label heights to accommodate multiple rows */
+.timeline-label {
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add explicit styles for education and career tracks */
+.education-track, .career-track {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+/* Ensure track heights reflect the number of rows they contain */
+.education-track {
+  min-height: 4.5rem;
+  border-bottom: none;
+  padding-bottom: 2rem; /* Added more padding at the bottom */
+  margin-bottom: 2rem; /* Increased margin between tracks */
+}
+
+.career-track {
+  min-height: 4.5rem;
+  padding-top: 1rem; /* Increased padding at the top */
+}
+
+/* Container for both tracks */
+.timeline-tracks-container {
+  position: relative;
+}
+
+/* Add a relative positioning to ensure proper track positioning */
+.education-track {
+  position: relative;
+}
+
+/* Make sure the absolute positioned timeline entries are contained within their tracks */
+.education-track .timeline-entry, 
+.career-track .timeline-entry {
+  position: absolute;
+  z-index: 5;
+}
+
+/* Adjust the timeline labels - move them slightly lower */
+.timeline-label {
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem; /* Add margin to position labels lower */
+  margin-bottom: 1rem; /* Add spacing between labels */
+}
+
+.timeline-label-spacer {
+  height: 90px; /* Increased spacer height to move labels down */
+  margin-bottom: 10px; /* Increased margin below spacer */
+}
+
+/* Featured Projects Section */
+.projects-section {
+  background-color: #F5E6CA !important; /* Explicit light gold color with !important */
+  padding: 2rem; /* Reduced top padding from 4rem to 2rem */
+  position: relative;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.projects-title {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1.5rem; /* Reduced from 2.5rem to 1.5rem */
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.5rem; /* Reduced from 1rem to 0.5rem */
+}
+
+.projects-title-underline {
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #000000;
+  margin: 0.8rem auto 0;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-tile {
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem;
+  padding: 2rem;
+  width: 320px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #D4AF37;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-tile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: #D4AF37;
+  border-width: 2px;
+}
+
+.project-title {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: #bbbbbb;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.project-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #D4AF37;
+  font-weight: 400;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.project-link:hover {
+  background-color: transparent;
+  color: #FFC64D;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+  font-weight: 700;
+}
+
+/* Posts Section */
+.posts-section {
+  background-color: #000000 !important; /* Explicit black background with !important */
+  padding: 2rem 0;
+  position: relative;
+}
+
+.posts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.posts-title {
+  color: #D4AF37;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.posts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post-box {
+  display: flex;
+  background-color: rgba(25, 25, 25, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #D4AF37;
+  min-height: 160px;
+}
+
+.post-box:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+  border-color: #D4AF37;
+  border-width: 2px;
+}
+
+.post-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-title {
+  color: #D4AF37;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.post-excerpt {
+  color: #bbbbbb;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.post-meta {
+  color: #777;
+  font-size: 0.85rem;
+  display: flex;
+}
+
+.post-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #D4AF37;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.post-link:hover {
+  background-color: transparent;
+  color: #FFC64D;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+  font-weight: 700;
+  border-color: transparent;
+}
+
+/* Title Typography - Elegant styling */
+.timeline-title, .projects-title, .posts-title, .bio-section h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-title::after, .projects-title::after, .posts-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    background-color: var(--primary-gold);
+}
+
+/* Override for projects title underline - change to black */
+.projects-title::after {
+    background-color: #000000;
+}
+
+.bio-section h2 {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-title, .projects-title, .posts-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-title::after, .projects-title::after, .posts-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+}
+
+.project-title, .post-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.8rem;
+}
+
+/* For sub-headings in timeline items */
+.timeline-content h3, .timeline-content h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Add this to your existing CSS file to ensure the font is loaded */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap');
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-gold);
+  color: var(--primary-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border: 2px solid var(--primary-black);
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  background-color: #FFC64D;
+}
+
+.scroll-to-top-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.scroll-to-top:hover .scroll-to-top-icon {
+  transform: translateY(-3px);
+}
+
+/* Fun Extras Section */
+.fun-extras-section {
+  background-color: #F5E6CA !important; /* Changed from black to gold like projects section */
+  padding: 3rem 0;
+  position: relative;
+  margin-bottom: 5rem; /* Add significant space between fun extras and footer */
+}
+
+.fun-extras-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem; /* Added bottom padding */
+}
+
+.fun-extras-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #000000; /* Changed from gold to black for contrast */
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Removing the after pseudo-element that creates the underline */
+.fun-extras-title::after {
+  display: none; /* Hide the underline */
+}
+
+.fun-extras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.fun-extra-item {
+  background-color: #000000; /* Changed to black for contrast with gold background */
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #D4AF37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.fun-extra-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Darkened shadow for visibility */
+  border-width: 2px;
+}
+
+.fun-extra-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Add styles for the circular image option */
+.fun-extra-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--primary-gold);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fun-extra-item h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--primary-gold);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Style for title link */
+.fun-extra-title-link {
+  text-decoration: none;
+  color: var(--primary-gold);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.fun-extra-title-link:hover {
+  color: #FFC64D;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .fun-extras-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Coffee Page Styles */
+.coffee-background {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+.coffee-hero {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/coffee-hero.jpg'); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.coffee-hero-content {
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.coffee-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-gold);
+}
+
+.coffee-hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.coffee-intro-section {
+    padding: 3rem 0;
+}
+
+.coffee-intro-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+}
+
+.coffee-equipment-grid,
+.coffee-beans-grid,
+.coffee-brewing-grid,
+.coffee-shops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.coffee-equipment-card {
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coffee-equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.equipment-image-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.equipment-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.coffee-equipment-card:hover .equipment-image {
+    transform: scale(1.05);
+}
+
+.equipment-details {
+    padding: 1.5rem;
+}
+
+.equipment-details h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--primary-gold);
+}
+
+.equipment-type {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--primary-gold);
+    color: black;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.coffee-bean-card, 
+.coffee-brewing-card, 
+.coffee-shop-card {
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.coffee-bean-card:hover, 
+.coffee-brewing-card:hover, 
+.coffee-shop-card:hover {
+    transform: translateY(-5px);
+}
+
+.bean-icon, 
+.brewing-icon {
+    font-size: 2rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.coffee-bean-card h3,
+.coffee-brewing-card h3,
+.coffee-shop-card h3 {
+    color: var(--primary-gold);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.coffee-bean-card h4,
+.coffee-shop-card h4 {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #cccccc;
+}
+
+.bean-notes {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bean-notes span {
+    font-weight: bold;
+    color: var(--primary-gold);
+}
+
+.bean-link, 
+.shop-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-gold);
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.bean-link:hover, 
+.shop-link:hover {
+    background-color: #d4af37;
+}
+
+.brewing-recipe {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brewing-recipe svg {
+    color: var(--primary-gold);
+}
+
+.shop-rating {
+    margin-bottom: 1rem;
+    color: var(--primary-gold);
+}
+
+.star-filled, 
+.star-half {
+    margin-right: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .coffee-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .coffee-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .coffee-equipment-grid,
+    .coffee-beans-grid,
+    .coffee-brewing-grid,
+    .coffee-shops-grid {
+        grid-template-columns: 1fr;
+    }
 }

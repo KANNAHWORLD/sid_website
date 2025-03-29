@@ -1,0 +1,109 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header-dark {
+    background-color: var(--primary-black);
+}
+
+.header-light {
+    background-color: var(--secondary-gold);
+}
+
+header .nav-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-dark .name {
+    color: var(--primary-gold);
+}
+
+.header-light .name {
+    color: var(--primary-black);
+}
+
+header .name {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+header .name:hover {
+    color: #FFFFFF !important; /* Override any other color settings */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 215, 0, 0.6);
+    transform: scale(1.05);
+}
+
+.header-dark .role {
+    color: var(--primary-white);
+}
+
+.header-light .role {
+    color: var(--primary-black);
+}
+
+header .role {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+/* Menu Items Styling */
+.nav-area .menu-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-area .menu-items a {
+    color: var(--primary-gold);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+/* Dark section menu items */
+.header-dark .menu-items a {
+    color: var(--primary-gold);
+}
+
+.header-dark .menu-items a:hover {
+    color: var(--primary-white);
+    transform: scale(1.1);
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Light section menu items */
+.header-light .menu-items a {
+    color: var(--primary-black);
+}
+
+.header-light .menu-items a:hover {
+    color: var(--primary-black);
+    transform: scale(1.1);
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Active menu item */
+.nav-area .menu-items a.active {
+    background: transparent;
+    font-weight: 600;
+} 
